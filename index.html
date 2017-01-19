@@ -1,0 +1,121 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="http://www.witchery.com.au/images/assetimages/2015/the-report/assets/css/the-report.css">
+        <link rel="stylesheet" href="https://www.witchery.com.au/Assets/witchery_report_14.css">
+        <link rel="stylesheet" href="https://www.witchery.com.au/assets/Witchery_14.css">
+        <link rel="stylesheet" href="https://www.witchery.com.au/images/assetimages/wi_styles.css">
+        <link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+          .delete {
+              position: relative;
+          }
+
+          .delete:after {
+              content: "\e014";
+              font-family: 'Glyphicons Halflings' !important;
+              display: block;
+              font-size: 11px;
+              position: absolute;
+              top: 0px;
+              right: -20px;
+              cursor: pointer;
+              color: rgba(255, 6, 6, 0.22);
+          }
+
+          .delete:hover:after {
+              color: rgba(255, 6, 6, 1);
+          }
+        </style>
+    </head>
+    <body>
+      <div class="container-fluid" style="margin-top:15px;">
+        <div class="row">
+     
+          <div class="col-lg-7">
+            <div id="tr-container" style="width:960px;border: 1px solid #E5E5E5;box-sizing: content-box;">
+              <div class="tr-content-container">
+                <div class="tr-content-page" data-title="AW16 Beauty" data-hash="aw16-beauty" aria-hidden="true">
+                  <div class="tr-cp-dt">
+                    <div class="tr-cp-mainimg">
+
+                      <img border="0" usemap="#Map16" class="backgroundImage" src="http://placehold.it/960x600" style="width:100%"></div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="row">
+              <form>
+                <div class="form-group col-lg-4">
+                  <label for="backgroundImage">Select background image</label>
+                  <input type="file" id="backgroundImage"></div>
+                <div class="form-group col-lg-8">
+                  <label for="shopNowURL">Default Shop Now link</label>
+                  <input type="text" id="shopNowURL" class="form-control" placeholder="link" value="/shop/witchery-report/issue-22/woman"></div>
+              </form>
+            </div>
+            <button type="button" class="btn btn-primary create-template" data-template-type="headline">headline</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="subheadline">subheadline</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="subheadline2">subheadline2</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="subheadline3">subheadline3</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="profile">profile</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="interview">interview</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="item">item</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="quotation">quotation</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="quotation2">quotation2</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="quotation3">quotation3</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="quotation4">quotation4</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="quotation5">quotation5</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="product">product</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="toc">toc</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="AW17Header">AW17 header</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="AW17subHeader">AW17 sub header</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="AW17Title">AW17 title</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="AW17Product">AW17 Product</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="blackBorderButton">black border button</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="whiteBorderButton">white border button</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="blackShopButton">black shop now</button>
+            <button type="button" class="btn btn-primary create-template" data-template-type="whiteShopButton">white shop now</button>
+            <button type="button" class="btn btn-success outputButton">Output HTML</button>
+            <button type="button" class="btn btn-warning editButton">Edit</button>
+            <button type="button" class="btn btn-danger resetButton">Reset</button>
+            <hr>
+            <span class="label label-success">Output</span>
+            <pre class="copytoclipboard"><code class="output language-html"></code></pre>
+          </div>
+
+        </div> <!-- /row -->
+      </div> <!-- /container -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/editable.js"></script>
+        <script src="js/vendor/prism.js"></script>
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.5/clipboard.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
